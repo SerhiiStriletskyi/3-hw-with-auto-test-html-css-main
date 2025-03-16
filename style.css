@@ -77,8 +77,8 @@ header span {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-gap: 60px;
+
+  gap: 60px;
   /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -211,8 +211,10 @@ footer {
   background-color: rgba(163, 167, 255, 0.3);
   padding: 26px 0;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
+
   /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
