@@ -7,7 +7,7 @@
 .container {
   outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
   margin: 0 auto;
-  width: 100%;
+  max-width: 1140px;
   /* 📍 Максимальная ширина для контейнера */
 }
 
@@ -34,6 +34,7 @@ header span {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
@@ -73,8 +74,9 @@ header span {
 
 .about-section .wrapper {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+
   /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -117,7 +119,9 @@ select:hover,
 .frameworks-list,
 .books-list {
   display: flex;
-  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  gap: 16px;
   /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 
@@ -135,6 +139,7 @@ select:hover,
 }
 
 .skills {
+  gap: 20px;
   display: flex;
   flex-direction: column;
   /* 📍 Свойства flexbox для расположения элементов с классом .label */
@@ -203,8 +208,7 @@ td {
 footer {
   background-color: rgba(163, 167, 255, 0.3);
   padding: 26px 0;
-  display: flex;
-  justify-content: center;
+
   /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
@@ -213,6 +217,9 @@ footer {
   font-size: 14px;
   color: #2965f1;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-link:hover {
